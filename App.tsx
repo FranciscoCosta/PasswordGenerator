@@ -11,7 +11,7 @@ const passwordSchema = Yup.object().shape({
 });
 
 export default function App() {
-  const [password, setpassword] = useState<string>('');
+  const [password, setpassword] = useState<string | undefined>('');
   const [isPasswordGenerated, setisPasswordGenerated] =
     useState<boolean>(false);
   const [lowercase, setlowercase] = useState<boolean>(true);
@@ -19,16 +19,49 @@ export default function App() {
   const [numbers, setnumbers] = useState<boolean>(false);
   const [symbols, setsymbols] = useState<boolean>(false);
 
-  const generatePasswordString = (passwordLenght: number) => {
-    return;
+  const generatePasswordString = async (passwordLenght: number) => {
+    let characterList = '';
+    const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const lowerCase = 'abcdefghijklmnopqrstuvwxyz';
+    const number = '0123456789';
+    const symbol = '!@#$%^&*()_+';
+
+    if (lowercase) {
+      characterList += lowerCase;
+    }
+    if (uppercase) {
+      characterList += upperCase;
+    }
+    if (numbers) {
+      characterList += number;
+    }
+    if (symbols) {
+      characterList += symbol;
+    }
+    if (characterList === '') {
+      characterList = lowerCase;
+    }
+    const finalPassword = await createPassword(characterList, passwordLenght);
+    setpassword(finalPassword);
+    setisPasswordGenerated(true);
   };
 
   const createPassword = async (characters: string, passwordLenght: number) => {
-    return;
+    let result = '';
+    for (let i = 0; i < passwordLenght; i++) {
+      const characterIndex = Math.round(Math.random() * characters.length);
+      result += characters.charAt(characterIndex);
+      return result;
+    }
   };
 
   const resetPasswordState = () => {
-    return;
+    setpassword('');
+    setisPasswordGenerated(false);
+    setlowercase(true);
+    setuppercase(false);
+    setnumbers(false);
+    setsymbols(false);
   };
 
   return (
