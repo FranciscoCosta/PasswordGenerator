@@ -1,79 +1,70 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+ <h1>PasswordGenerator</h1>
+  <p>
+    <a href="https://github.com/FranciscoCosta/PasswordGenerator">
+      <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/FranciscoCosta/PasswordGenerator">
+    </a>
+    <a href="https://github.com/FranciscoCosta/PasswordGenerator/blob/master/LICENSE">
+      <img alt="GitHub" src="https://img.shields.io/github/license/FranciscoCosta/PasswordGenerator">
+    </a>
+  </p>
 
-# Getting Started
+  <h2>Descrição</h2>
+  <p>
+    O PasswordGenerator é um aplicativo desenvolvido em React Native que permite aos usuários gerar senhas aleatórias
+    com comprimento variando de 8 a 16 caracteres. Os usuários têm a opção de selecionar se desejam incluir letras
+    maiúsculas, letras minúsculas, números e/ou símbolos em suas senhas geradas.
+  </p>
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+  <h2>Funcionalidades</h2>
+  <ul>
+    <li>Geração de senhas aleatórias de 8 a 16 dígitos.</li>
+    <li>Opções para inclusão de letras maiúsculas, letras minúsculas, números e/ou símbolos nas senhas geradas.</li>
+    <li>Interface amigável e fácil de usar.</li>
+  </ul>
 
-## Step 1: Start the Metro Server
+  <h2>Pré-requisitos</h2>
+  <p>
+    Certifique-se de ter as seguintes ferramentas instaladas em seu sistema:
+  </p>
+  <ul>
+    <li>Node.js (https://nodejs.org)</li>
+    <li>npm (geralmente é instalado com o Node.js)</li>
+    <li>React Native CLI (execute <code>npm install -g react-native-cli</code> para instalar)</li>
+    <li>Xcode ou Android Studio (dependendo da plataforma em que deseja executar o aplicativo)</li>
+  </ul>
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+  <h2>Como executar o aplicativo</h2>
+  <p>
+    Siga os passos abaixo para executar o aplicativo localmente em um emulador ou dispositivo físico:
+  </p>
+  <ol>
+    <li>Clone o repositório:</li>
+  </ol>
+  <pre><code>git clone https://github.com/FranciscoCosta/PasswordGenerator.git</code></pre>
+  <ol start="2">
+    <li>Navegue até o diretório do projeto:</li>
+  </ol>
+  <pre><code>cd PasswordGenerator</code></pre>
+  <ol start="3">
+    <li>Instale as dependências:</li>
+  </ol>
+  <pre><code>npm install</code></pre>
+  <ol start="4">
+    <li>Execute o aplicativo em um emulador ou dispositivo conectado:</li>
+  </ol>
+  <pre><code>npx react-native run-android</code></pre>
+  <p>
+    ou
+  </p>
+  <pre><code>npx react-native run-ios</code></pre>
 
-To start Metro, run the following command from the _root_ of your React Native project:
+  <h2>Contribuindo</h2>
+  <p>
+    Sinta-se à vontade para enviar pull requests com melhorias, correções de bugs ou novas funcionalidades. Ficarei feliz em
+    revisar e mesclar suas contribuições!
+  </p>
 
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+  <h2>Licença</h2>
+  <p>
+    Este projeto está licenciado sob a licença MIT - consulte o arquivo <a href="https://github.com/FranciscoCosta/PasswordGenerator/blob/master/LICENSE">LICENSE</a> para obter detalhes.
+  </p>
